@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning About Attributes</title>
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar-top">
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="#" id="logo">Code Queen</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">About</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <img src="./images/banner.jpg" alt="Plate on Table" /> 
+        <div class="feedback-form">
+           <h4>Please leave your feedback below.</h4>
+           <form id="review-form" method="POST" action="./index.html">
+               <div input="input-element">
+                   <label for="full_name">Full Name:</label>
+                   <input type="text" placeholder="Sylvia" id="full_name" name="full_name" />
+               </div>
+               <div input="input-element">
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Sylvia" id="email" name="email" />
+
+                <div input="input-element">
+                    <label for="review">Message:</label>
+                    <textarea name="review" cols="25" rows="5">
+                    </textarea>
+                </div>
+                <input type="submit" value="Submit" />
+           </form>
+        </div>
+        <div class="feed">
+              <h4>Restaurant Reviews</h4>
+              <p>Feedback goes here.</p>
+        </div>
+    </div>
+    <!--
+        <main></main>  holds main content 
+        <aside></aside> holds sidebar content 
+        <section></section> works like a div
+    -->
+</body>
+</html>
