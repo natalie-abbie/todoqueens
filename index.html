@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeQueen - Restaurant</title>
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- <style> .
+        /*  tag selector */
+        body {
+            color: grey;
+        }
+
+        /* id selector */
+        #logo {
+            color: grey;
+            text-decoration: none;
+        }
+
+        /* class selector */
+        .menu {
+            background-color: black;
+            color: orangered;
+        }
+
+        /* 
+        look inside of div with a class of feed
+        for every div inside, look for it's child of element height: 4px;
+        then apply style it
+         */
+        div.feed>div>h4 {
+            color: aqua;
+        }
+    </style> -->
 </head>
+
 <body>
+    <!--header section -->
     <header>
         <nav class="navbar-top">
             <ul class="menu">
@@ -24,70 +54,71 @@
         </nav>
     </header>
     <div class="container">
-        <img src="./images/banner.jpg" alt="Plate on Table" /> 
+        <img class="banner" src="./images/banner.jpg" alt="Plate on Table" />
         <div class="feedback-form">
-           <h4>Please leave your feedback below.</h4>
-           <form id="review-form" method="POST" action="./index.html">
-               <div input="input-element">
-                   <label for="full_name">Full Name:</label>
-                   <input type="text" placeholder="Sylvia" id="full_name" name="full_name" />
-               </div>
+            <h4>Please leave your feedback below.</h4>
+            <form id="review-form" method="POST" action="./index.html">
+                <div input="input-element">
+                    <label for="full_name">Full Name:</label>
+                    <input type="text" placeholder="Sylvia" id="full_name" name="full_name" />
+                </div>
 
                 <div input="input-element">
                     <label for="review">Review:</label>
-                    <textarea name="review" cols="25" rows="5">
+                    <textarea id="review" name="review" cols="25" rows="5">
                     </textarea>
                 </div>
                 <input type="submit" value="Submit" />
-           </form>
+            </form>
         </div>
         <div class="feed">
-              <h4>Restaurant Reviews</h4>
+            <h4>Restaurant Reviews</h4>
             <div class="review">
-                  <h4 class="reviewer">Fanny</h4>
-                  <p class="review-text">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                     Ut sequi voluptates doloremque optio pariatur, 
-                     iste quibusdam blanditiis modi cum ab cumque distinctio 
-                     beatae atque repellendus ipsam itaque illo quas libero molestias praesentium? 
-                     Unde ducimus maxime nostrum culpa, modi soluta odit hic doloremque? 
+                <h4 class="reviewer">Fanny</h4>
+                <p class="review-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ut sequi voluptates doloremque optio pariatur,
+                    iste quibusdam blanditiis modi cum ab cumque distinctio
+                    beatae atque repellendus ipsam itaque illo quas libero molestias praesentium?
+                    Unde ducimus maxime nostrum culpa, modi soluta odit hic doloremque?
                     Labore, eaque beatae.
-                  </p>
+                </p>
             </div>
             <div class="review">
                 <h4 class="reviewer">Prossy</h4>
                 <p class="review-text">
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                   Ut sequi voluptates doloremque optio pariatur, 
-                   iste quibusdam blanditiis modi cum ab cumque distinctio 
-                   beatae atque repellendus ipsam itaque illo quas libero molestias praesentium? 
-                   Unde ducimus maxime nostrum culpa, modi soluta odit hic doloremque? 
-                  Labore, eaque beatae.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ut sequi voluptates doloremque optio pariatur,
+                    iste quibusdam blanditiis modi cum ab cumque distinctio
+                    beatae atque repellendus ipsam itaque illo quas libero molestias praesentium?
+                    Unde ducimus maxime nostrum culpa, modi soluta odit hic doloremque?
+                    Labore, eaque beatae.
                 </p>
-          </div>
-          <div class="review">
-            <h4 class="reviewer">Daisy</h4>
-            <p class="review-text">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-               Ut sequi voluptates doloremque optio pariatur, 
-               iste quibusdam blanditiis modi cum ab cumque distinctio 
-               beatae atque repellendus ipsam itaque illo quas libero molestias praesentium? 
-               Unde ducimus maxime nostrum culpa, modi soluta odit hic doloremque? 
-              Labore, eaque beatae.
-            </p>
-      </div>
-      <div class="review">
-        <h4 class="reviewer">Marion</h4>
-        <p class="review-text">
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-           Ut sequi voluptates doloremque optio pariatur, 
-           iste quibusdam blanditiis modi cum ab cumque distinctio 
-           beatae atque repellendus ipsam itaque illo quas libero molestias praesentium? 
-           Unde ducimus maxime nostrum culpa, modi soluta odit hic doloremque? 
-          Labore, eaque beatae.
-        </p>
-  </div>
+            </div>
+            <div class="review">
+                <h4 class="reviewer">Daisy</h4>
+                <p class="review-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ut sequi voluptates doloremque optio pariatur,
+                    iste quibusdam blanditiis modi cum ab cumque distinctio
+                    beatae atque repellendus ipsam itaque illo quas libero molestias praesentium?
+                    Unde ducimus maxime nostrum culpa, modi soluta odit hic doloremque?
+                    Labore, eaque beatae.
+                </p>
+            </div>
+            <div class="review">
+                <h4 class="reviewer">Marion</h4>
+                <p class="review-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ut sequi voluptates doloremque optio pariatur,
+                    iste quibusdam blanditiis modi cum ab cumque distinctio
+                    beatae atque repellendus ipsam itaque illo quas libero molestias praesentium?
+                    Unde ducimus maxime nostrum culpa, modi soluta odit hic doloremque?
+                    Labore, eaque beatae.
+                </p>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
