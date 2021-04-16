@@ -1,4 +1,4 @@
-Intro to CSS (Cascsding stylesheets)
+Intro to CSS (Cascading stylesheets)
 ## what we learnt about
 - External stylesheets
 - Inline styles
