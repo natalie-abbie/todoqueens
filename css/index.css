@@ -17,7 +17,7 @@ img.banner {
 }
 
 /* class selector */
-nav {
+.navbar-top {
     background-color: black;
 }
 .menu {
@@ -28,8 +28,11 @@ nav {
     text-decoration: none;
 }
 a:hover {
-    color:orangered;
-    text-transform: uppercase;
+    color:cyan;
+    /* text-transform: uppercase; */
+}
+a:active {
+    color: lightblue;
 }
 
 /* 
