@@ -3,6 +3,7 @@
     color: grey;
     width: 90%;
     margin:auto;
+    background-color: rgba(91, 84, 133, 0.342);
 }
 
 img.banner {
@@ -12,27 +13,36 @@ img.banner {
 
 /* id selector */
 #logo {
-    color: grey;
+    color: rgb(204, 36, 134);
     text-decoration: none;
 }
 
 /* class selector */
 .navbar-top {
-    background-color: black;
+    background-color: rgb(0,0,0);
+    margin-top: 0px
 }
 .menu {
     list-style-type: none;
-    height: 60px;
+    display: inline-block;
+}
+.menu > li {
+    display: inline;
 }
 .menu > li > a {
     text-decoration: none;
+    margin-top:0px;
+    margin-bottom: 0px;
+    color:rgb(235, 46, 21)
 }
 a:hover {
-    color:cyan;
+    /* color:cyan; */
     /* text-transform: uppercase; */
+    /* mix of red green and blue */
+    color: #bacf3f;
 }
 a:active {
-    color: lightblue;
+    color: rgb(210, 144, 71);
 }
 
 /* 
@@ -40,6 +50,34 @@ look inside of div with a class of feed
 for every div inside, look for it's child of element height: 4px;
 then apply style it
  */
-div.feed>div>h4 {
-    color: aqua;
+
+
+.review {
+    background-color: #fff;
+    /* background-image: url('../images/bg_2.jpg'); */
+    /* background-size: cover; */
+    border-bottom: 2px solid rgba(31, 23, 73, 0.548);
+    /* border-top: 2px solid rgba(31, 23, 73, 0.548); */
+    margin:5px;
 }
+
+div.feed>div>h4 {
+    color: rgb(14, 0, 95);
+    margin-bottom:0;
+    padding:6px
+}
+
+.review-text {
+    /* color: rgb(74, 83, 107); */
+    /* red, green blue opacity */
+    color: rgba(31, 23, 73, 0.548);
+    margin-top:7px;
+    margin-bottom:4px;
+    /* padding: 10px; */
+    padding:3px 5px 5px 6px;
+    /* display: none; */
+}
+
+
+/* margins -> spacing our elements */
+
