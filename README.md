@@ -30,3 +30,17 @@ Intro to CSS (Cascading stylesheets)
 - Display
  - sets how an item appears on the screen
 
+ #### dividing our page into sections
+ - width, 
+ - height
+ - overflow
+ - float
+ - display (block, inline, inline)
+ - box-shadow
+ - styling input elements
+ - images
+ - text-align
+ - font-weight
+ - buttons
+ - styling forms
+

@@ -15,25 +15,33 @@ img.banner {
 #logo {
     color: rgb(204, 36, 134);
     text-decoration: none;
+    margin:9px;
+    padding:12px;
+    float: left;
 }
 
 /* class selector */
 .navbar-top {
     background-color: rgb(0,0,0);
-    margin-top: 0px
+    margin-top: 0px;
+    height:50px;
 }
 .menu {
     list-style-type: none;
-    display: inline-block;
+    display: block;
 }
 .menu > li {
     display: inline;
+    float:right;
+    margin:9px;
+    padding:12px;
+    
 }
 .menu > li > a {
     text-decoration: none;
     margin-top:0px;
     margin-bottom: 0px;
-    color:rgb(235, 46, 21)
+    color:rgb(235, 46, 21);
 }
 a:hover {
     /* color:cyan; */
@@ -64,20 +72,101 @@ then apply style it
 div.feed>div>h4 {
     color: rgb(14, 0, 95);
     margin-bottom:0;
-    padding:6px
+    padding:10px
 }
+
+/* margins -> spacing our elements */
+
+/* plotting sections within our page */
+.feedback-form {
+ width:40%;
+ float: left;
+ padding:6px;
+}
+.feed {
+  width:58%;
+  height: 490px;
+  float: right;
+  padding:4px;
+  background:lightblue;
+  overflow:auto;
+}
+
+.review {
+     border-radius:30px;
+     height: 250px;
+     overflow: hidden;
+ }
+ /* .card-content{
+     display: inline;
+     margin-bottom: 9px;
+     padding: 25px;
+ } */
 
 .review-text {
     /* color: rgb(74, 83, 107); */
     /* red, green blue opacity */
     color: rgba(31, 23, 73, 0.548);
-    margin-top:7px;
-    margin-bottom:4px;
-    /* padding: 10px; */
+    /* margin-top:3px;
+    margin-bottom:4px; */
+    padding: 10px;
+    margin:9px;
     padding:3px 5px 5px 6px;
     /* display: none; */
+    height: 100px;
+    /* text-align: right; */
+    width:90%;
 }
+.reviewer {
+    font-style: italic;
+}
+.avatar {
+    height:100px;
+    width:20%;
+    float: left;
+    margin:5px;
+    border-radius: 45px;
+}
+.feedback-form {
+    padding: 4px;
+    background: white;
+    height: 250px;
+    
+}
+label, .form-header {
+    font-weight: bold;
+    color: black;
+}
+.input-element input, textarea {
+    width:100%;
+    /* padding:5px; */
+    margin-bottom: 4px;
+    border: none;
+    outline: none;
+    padding:3px;
+    background: none;
+    border-bottom: 1px solid grey;
+    resize: none;
 
-
-/* margins -> spacing our elements */
+}
+ input:focus, textarea:focus {
+    border-bottom: 1px solid blue;
+ }
+ input[type='submit']:hover {
+    cursor: pointer;
+    
+}
+ input[type='submit'] {
+     background: rgb(61, 196, 49);
+     border:none;
+     height:40px;
+     width:120px;
+     color:#fff;
+     text-align:left;
+ }
+ 
+ 
+.review:hover {
+    box-shadow: 0 5px 8px 1px;
+}
 
