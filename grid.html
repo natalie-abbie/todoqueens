@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Grid</title>
+    <style>
+          body{
+            margin: 0;
+            background-image: radial-gradient(orangered, purple);
+            /* width: 80%;
+            margin: 0 auto; */
+        }
+        h2{
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+        }
+        .container{
+            display: grid;
+            /* grid-template-columns: 25% 50% 25%; */
+            grid-template-columns: 20% 20% auto 30%;
+            grid-template-rows: repeat(auto);
+            /* grid-template-rows: 50% 30% 20%; */
+            grid-template-areas: 
+            "first first first first"
+            "news news . ."
+            ;
+            column-gap: 2px;
+            row-gap: 3px;
+            justify-items: center;
+            align-items: end;
+        }
+        .grid-item{
+            background: #f2f2f2;
+            /* margin:3px; */
+            padding:6px;
+        }
+        .top {
+            grid-area: first;
+        }
+        .news {
+            grid-area: news;
+        }
+    </style>
+</head>
+<body>
+    <h2>Grid Card System</h2>
+    <div class="container">
+        <div class="grid-item top">
+            <p>1</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consectetur blanditiis commodi ducimus voluptatibus sed, nesciunt accusamus eum neque, incidunt, enim cumque eaque perspiciatis! Non magni dolor, perspiciatis cumque distinctio, ad deserunt nulla praesentium facere reprehenderit, laudantium sit doloremque excepturi architecto repudiandae odit aperiam recusandae!</p>
+        </div>
+        <div class="grid-item news">
+            <p>2</p>
+            <p>Voluptas quis dolores voluptatum ipsam quam. Explicabo vero sed harum quas impedit cupiditate, soluta, vel deleniti veritatis possimus non perferendis, mollitia voluptatem. Deserunt quisquam consequatur commodi rerum veniam temporibus, consectetur ad officiis odio modi, facilis aliquid optio et nostrum recusandae vero, voluptatum cupiditate asperiores porro.</p>
+        </div>
+        <div class="grid-item">
+            <p>3</p>
+            <p>Consequuntur numquam alias voluptatem aut nulla quasi error minima similique ducimus officiis iure, saepe debitis autem. Id sit ipsum perferendis rerum hic porro nihil repellat soluta saepe repudiandae, maxime quos, ad recusandae esse cupiditate similique accusamus consequatur amet debitis incidunt tenetur obcaecati libero neque tempore!</p>
+        </div>
+        <div class="grid-item">
+            <p>4</p>
+            <p>Non soluta unde ipsam cum, sed dolorum impedit in, reiciendis voluptate nostrum rem voluptatibus et eveniet alias ex a quam eius, tenetur qui? Doloremque ducimus, illo consectetur, animi repellat ratione omnis debitis fugiat architecto laborum cum et velit, dolore quas nisi impedit. Deserunt, labore quis.</p>
+        </div>
+        <div class="grid-item">
+            <p>5</p>
+            <p>Aperiam aliquam, architecto esse modi temporibus pariatur, eos vel recusandae magnam, illo nemo harum rem. Eius, ex, et corporis magnam impedit assumenda, dicta ducimus ratione debitis blanditiis expedita deserunt quae. Odit voluptatibus labore eveniet voluptate distinctio quod, iste saepe, nihil soluta quas commodi consequuntur sed?</p>
+        </div>
+        <div class="grid-item">
+            <p>6</p>
+            <p>Recusandae sunt doloremque rem, ab natus, hic, commodi optio voluptas alias nam nisi corporis perspiciatis velit accusamus dicta quos aliquid eligendi? Sapiente dolorum ullam, similique perspiciatis blanditiis, mollitia repudiandae ut adipisci expedita labore aspernatur enim inventore corporis nam recusandae nisi obcaecati! Autem soluta numquam ab!</p>
+        </div>
+        <div class="grid-item">
+            <p>7</p>
+            <p>Quis qui at cupiditate enim perferendis tenetur non praesentium molestiae ipsa fuga delectus dolor repellat adipisci, quasi ea asperiores doloremque fugit repellendus. Aliquid provident odit quo nemo neque culpa veritatis cum hic, repellendus facere ipsam nisi placeat tempore eius similique nam maxime dicta? Ipsam, unde?</p>
+        </div>
+        <div class="grid-item">
+            <p>8</p>
+            <p>Blanditiis quia aperiam saepe a, dignissimos nesciunt amet omnis tenetur, quod exercitationem quam vitae. Perspiciatis hic excepturi facilis, ad perferendis modi porro voluptas? Dicta similique, officiis consectetur error eius cumque illo voluptatum quasi illum deserunt soluta dignissimos id dolorum sit eveniet voluptate impedit asperiores repellat.</p>
+        </div>
+        <div class="grid-item">
+            <p>9</p>
+            <p>Blanditiis, ullam qui perferendis eveniet facere itaque est quos deleniti consequuntur fuga repellendus dicta culpa, harum, in voluptas saepe ex nihil quisquam? Nulla incidunt minima delectus iste dolores omnis in atque iure consequuntur voluptatum qui sunt at enim accusamus quae, eos maxime commodi ab dolor.</p>
+        </div>
+        <div class="grid-item">
+            <p>10</p>
+            <p>Nobis mollitia iusto obcaecati omnis soluta eveniet, excepturi ipsam doloribus dignissimos vitae ab voluptates cupiditate nostrum asperiores, nemo quis. Impedit, molestias, omnis porro nulla atque libero id ipsa ratione sunt facere, illum magnam laudantium. Eligendi natus voluptatibus, amet unde perspiciatis asperiores atque ea maxime similique.</p>
+        </div>
+        <div class="grid-item">
+            <p>11</p>
+            <p>Ex quae eius repellendus quos quam aliquam corporis mollitia odit, accusamus, magnam ipsam consequuntur, libero eaque obcaecati amet numquam tenetur sequi dolor enim omnis est? Sequi pariatur sapiente nobis mollitia rerum, ad, iste error saepe veniam quia modi! Dolorem ipsa facilis distinctio, necessitatibus tempora fugiat.</p>
+        </div>
+        <div class="grid-item">
+            <p>12</p>
+            <p>Natus, velit exercitationem. Vitae maiores ratione veniam perferendis earum sequi reiciendis excepturi saepe hic, illo possimus quod dolorem recusandae libero. Quibusdam aut repellat quas, delectus amet placeat harum incidunt ex totam vel facilis facere veritatis porro. Eius soluta earum reprehenderit nobis molestias placeat natus dolore!</p>
+        </div>
+    </div>
+</body>
+</html>
