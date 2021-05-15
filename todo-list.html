@@ -107,15 +107,23 @@
 
                 // add the text
                 span.textContent = e.target.value
+                console.log(e.target.value);
                 input.type = 'checkbox';
                 btn.textContent = 'Dynamic X';
                 div.className = 'todo-item'
                 div.appendChild(input);
+                div.appendChild(span);
                 div.appendChild(btn);
                 li.appendChild(div);
 
                 // add to the dom
                 items.appendChild(li);
+
+                // listen to click
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    alert('Dynamic button clicked');
+                })
             }
         });
     </script>
