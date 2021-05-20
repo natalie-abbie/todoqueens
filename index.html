@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeQueen - Restaurant</title>
     <link rel="stylesheet" href="./css/index.css" />
-    <script src="./js/reviews.js"></script>
+    <script src="./js/submit.js"></script>
     <!-- <style> .
         /*  tag selector */
         body {
@@ -74,7 +74,8 @@
                     <textarea id="review" name="review">
                     </textarea>
                 </div>
-                <input type="submit" method="POST" value="Submit" />
+                <!-- <input type="submit" method="POST" value="Submit" /> -->
+                <input type="button" value="Submit" id="btnSubmit" onclick="testVariable()">
             </form>
         </div>
         <div class="feed">
@@ -154,8 +155,15 @@
                     Labore, eaque beatae.
                 </p>
             </div>
+            <div>
+                <p id="p1"></p>
+                <p id="p2"></p>
+            </div>
         </div>
     </div>
+
+
+   
    
 </body>
 
