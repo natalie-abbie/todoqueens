@@ -1,5 +1,5 @@
 
-        function testVariable() {
+        function submitcomment() {
             debugger
             var strText = document.getElementById("full_name").value;
             var strText1 = document.getElementById("review").value;
@@ -8,6 +8,9 @@
 
         }
    
+
+      
+
 
 
 
